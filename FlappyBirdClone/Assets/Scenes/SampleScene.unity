@@ -1395,7 +1395,7 @@ GameObject:
   - component: {fileID: 752308590}
   - component: {fileID: 752308589}
   m_Layer: 5
-  m_Name: StartGame
+  m_Name: RestartGame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1467,7 +1467,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2094190576}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: StartButton
+        m_MethodName: RestartButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1545,7 +1545,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PipeSpawner
   _maxtime: 1.5
-  _HeightRange: 0.5
+  _HeightRange: 0.8
   _Pipe: {fileID: 5676404501661829785, guid: 60ee3a440e25da242a4c2221a2419748, type: 3}
 --- !u!4 &759424490
 Transform:

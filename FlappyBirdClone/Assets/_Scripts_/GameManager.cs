@@ -1,6 +1,6 @@
 using UnityEngine;
-using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -46,6 +46,13 @@ public class GameManager : MonoBehaviour
     {
         Time.timeScale = 1f;
         UpdateUIState(false, false, false, true);
+    }
+
+    public void RestartButton()
+    {
+        Time.timeScale = 1f;
+
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
     public void QuitButton()
     {
